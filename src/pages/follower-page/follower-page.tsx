@@ -1,10 +1,13 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 import Follower from "../../components/follower/follower";
 
 const FollowersPage: React.FC = () => {
   return (
     <div>
-      <Follower />
+      <Container>
+        <Follower />
+      </Container>
     </div>
   );
 };

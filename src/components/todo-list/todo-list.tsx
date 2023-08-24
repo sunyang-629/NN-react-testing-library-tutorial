@@ -1,4 +1,5 @@
 import React from "react";
+import "./todo-list.css";
 import TodoFooter from "../todo-footer";
 
 export type TodoType = {

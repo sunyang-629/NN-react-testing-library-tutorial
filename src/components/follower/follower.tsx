@@ -1,4 +1,5 @@
 import React from "react";
+import "./follower.css";
 import Header from "../header";
 import FollowersList from "../follower-list";
 

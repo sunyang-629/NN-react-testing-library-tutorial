@@ -1,4 +1,5 @@
 import React from "react";
+import "./follower-list.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
 

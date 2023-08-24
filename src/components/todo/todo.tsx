@@ -1,4 +1,5 @@
 import React from "react";
+import "./todo.css";
 import AddInput from "../add-input";
 import Header from "../header";
 import TodoList from "../todo-list";
