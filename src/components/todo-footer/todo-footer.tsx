@@ -11,7 +11,7 @@ const TodoFooter: React.FC<ITodoFooterProps> = ({
 }) => {
   return (
     <div className="todo-footer">
-      <p>
+      <p data-testId="para">
         {numberOfIncompleteTasks}{" "}
         {numberOfIncompleteTasks === 1 ? "task" : "tasks"} left
       </p>

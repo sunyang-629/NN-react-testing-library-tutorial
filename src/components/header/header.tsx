@@ -11,7 +11,7 @@ const Header: React.FC<IHeaderProps> = ({ title }) => {
       <h1 title="Header" className="header">
         {title}
       </h1>
-      <h3 className="header">Cats</h3>
+      {/* <h3 className="header">Cats</h3> */}
     </>
   );
 };
