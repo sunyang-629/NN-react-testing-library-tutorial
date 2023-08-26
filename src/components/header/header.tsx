@@ -7,9 +7,12 @@ interface IHeaderProps {
 
 const Header: React.FC<IHeaderProps> = ({ title }) => {
   return (
-    <h1 title="Header" className="header">
-      {title}
-    </h1>
+    <>
+      <h1 title="Header" className="header">
+        {title}
+      </h1>
+      <h3 className="header">Cats</h3>
+    </>
   );
 };
 
