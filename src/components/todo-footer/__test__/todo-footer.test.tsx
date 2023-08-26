@@ -14,16 +14,18 @@ const MockTodoFooter: React.FC<{ numberOfIncompleteTasks: number }> = ({
   );
 };
 
-it("should render the correct amount of incompleted tasks", async () => {
-  render(<MockTodoFooter numberOfIncompleteTasks={5} />);
-  const paragraphElement = screen.getByText("5 tasks left");
-  expect(paragraphElement).toBeInTheDocument();
-});
+describe("TodoFooter", () => {
+  it("should render the correct amount of incompleted tasks", async () => {
+    render(<MockTodoFooter numberOfIncompleteTasks={5} />);
+    const paragraphElement = screen.getByText("5 tasks left");
+    expect(paragraphElement).toBeInTheDocument();
+  });
 
-it("should render 'task' when the number of incomplete tasks is one ", async () => {
-  render(<MockTodoFooter numberOfIncompleteTasks={1} />);
-  const paragraphElement = screen.queryByText("1 tasks left");
-  expect(paragraphElement).not.toBeInTheDocument();
+  it("should render 'task' when the number of incomplete tasks is one ", async () => {
+    render(<MockTodoFooter numberOfIncompleteTasks={1} />);
+    const paragraphElement = screen.queryByText("1 tasks left");
+    expect(paragraphElement).not.toBeInTheDocument();
+  });
 });
 
 it("should render 'task' when the number of incomplete tasks is one ", async () => {
