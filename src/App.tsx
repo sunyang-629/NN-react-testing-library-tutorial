@@ -8,7 +8,7 @@ import router from "./routes/routes";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" data-testid="App">
       <Banner />
       <RouterProvider router={router} />
     </div>
