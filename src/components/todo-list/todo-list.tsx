@@ -38,11 +38,12 @@ const TodoList: React.FC<ITodoListProps> = ({ setTodos, todos }) => {
     <div className="todolist-container">
       <div className="todos-container">
         <div>
-          {todos.map((todo) => (
+          {todos.map((todo, index) => (
             <div
               className={`todo-item ${todo.completed && "todo-item-active"}`}
               onClick={() => updateTask(todo.id)}
               data-testid="task-container"
+              key={index}
             >
               {todo.task}
             </div>
