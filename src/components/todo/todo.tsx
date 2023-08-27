@@ -9,7 +9,7 @@ const Todo: React.FC = () => {
   const [todos, setTodos] = React.useState<TodoType[]>([]);
 
   return (
-    <div className="todo">
+    <div className="todo" data-testid="todo">
       <Header title="Todo" />
       <AddInput setTodos={setTodos} todos={todos} />
       <TodoList todos={todos} setTodos={setTodos} />
