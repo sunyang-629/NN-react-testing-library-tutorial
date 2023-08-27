@@ -1,4 +1,3 @@
-import React from "react";
 import { it, expect } from "vitest";
 import { render, screen, fireEvent } from "../../../../test-utils";
 import Todo from "../todo";
