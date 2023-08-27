@@ -49,6 +49,14 @@ const mockResponse = {
 };
 
 describe("FollowersList", () => {
+  beforeEach(() => {
+    console.log("running before each test");
+  });
+
+  beforeAll(() => {
+    console.log("running once before all tests");
+  });
+
   it("should render follower items", async () => {
     mockedAxios.get.mockResolvedValue(mockResponse);
     render(<MockFollowersList />);
@@ -59,7 +67,6 @@ describe("FollowersList", () => {
   it("should render multiple follower items", async () => {
     render(<MockFollowersList />);
     const followerDivElement = await screen.findAllByTestId(/follower-item/i);
-    screen.debug();
     expect(followerDivElement.length).toBe(2);
   });
 });
